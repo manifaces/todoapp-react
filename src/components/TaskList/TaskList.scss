@@ -1,0 +1,6 @@
+.task-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.6rem;
+	padding-bottom: 4rem;
+}
