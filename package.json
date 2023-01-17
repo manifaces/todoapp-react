@@ -2,11 +2,13 @@
   "name": "react-todolist",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://manifaces.github.io/todoapp-react/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "gh-pages": "^4.0.0",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
@@ -18,7 +20,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "lint": "eslint */**.{jsx,js}",
     "lint:fix": "eslint */**.{jsx,js} --fix"
   },
